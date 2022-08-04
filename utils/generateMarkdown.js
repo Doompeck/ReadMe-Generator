@@ -19,6 +19,7 @@ function renderLicenseSection(license) {}
 // etc.
 // render the readme  to the output folder!
 
+// going to pass the answers of the prompts into this function
 function generateMarkdown(data) {
   return `# ${data.title}
 
