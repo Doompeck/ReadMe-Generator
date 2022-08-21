@@ -1,7 +1,8 @@
 // Packages required for function
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown.js");
 const fs = require("fs");
+
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // Question Array
 const questions = [
@@ -28,7 +29,7 @@ const questions = [
     {
         type: 'input',
         message: "What is a description of your project?",
-        name: 'project description'
+        name: 'project-description'
     },
     {
         type: 'input',
@@ -72,6 +73,8 @@ function writeToFile(fileName, data) {
 async function init() {
     try {
     const userResponse = await inquirer.prompt(questions);
+
+    const markdown = generateMarkdown(userResponse);
 
     // console.log(userResponse);
     writeToFile('ReadMe.md', markdown);
