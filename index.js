@@ -1,6 +1,6 @@
 // Packages required for function
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 const fs = require("fs");
 
 // Question Array
@@ -14,6 +14,11 @@ const questions = [
         type: 'input',
         message: "What is your repo name?",
         name: 'repo'
+    },
+    {
+        type: 'input',
+        message: "What is your email address?",
+        name: 'email'
     },
     {
         type: 'input',
@@ -54,7 +59,7 @@ const questions = [
 
 // Function to write to file.
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data,err => {
+    fs.writeFile(fileName, data, err => {
         if(err) {
             return console.log(err);
         }
@@ -63,18 +68,17 @@ function writeToFile(fileName, data) {
 }
 
 
-// Main function
-function init() {
-    inquirer.prompt(questions)
-    .then((intruirerResponse, data) => {
-        console.log("Generating Readme.md.");
-        writeToFile();
-    })
-    .catch((err) => {
-        console.log(err);
-    })
-   
-}
+// Main function is an async function that waits for inquirer prompts before moving forward.
+async function init() {
+    try {
+    const userResponse = await inquirer.prompt(questions);
 
+    // console.log(userResponse);
+    writeToFile('ReadMe.md', markdown);
+
+} catch (error) {
+    console.log(error);
+}
+}
 // Function call to initialize app
 init();
