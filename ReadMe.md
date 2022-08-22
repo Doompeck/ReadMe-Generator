@@ -18,7 +18,9 @@ Run node index.js.
 Enter the required details and optional details as needed.
   ## Usage
 
-[Video Walkthrough](https://drive.google.com/file/d/1NNoReFiwv57c5JJYqTRK6ZA0hQcsOZTK/view)
+[Repo Link](https://github.com/Doompeck/ReadMe-Generator)
+
+[Video Walkthrough](https://drive.google.com/file/d/1xYrV-ZwHG4vHNlP_8BJYSOdXZnTH3R7W/view)
 
   ## Contributing
 
