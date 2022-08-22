@@ -1,41 +1,44 @@
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
-
-### bob
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+### Readme Generator
 
 ## Description
 
-bob
+A quick and simple readme generator to compile the basic options for your readme needs.
 
-## Table of Contents*[Installation](#installation)<br/>*[Usage](#usage)<br/>*[Contributing](#contributing)<br/>*[Tests](#tests)<br/>
+## Table of Contents
+*[Installation](#installation)<br/>
+*[Usage](#usage)<br/>
+*[Contributing](#contributing)<br/>
+*[Tests](#tests)<br/>
 *[License](#license)<br/>
 
   ## Installation
 
-bob
+Run node index.js.
+Enter the required details and optional details as needed.
   ## Usage
 
-bob
+[Video Walkthrough](https://drive.google.com/file/d/1NNoReFiwv57c5JJYqTRK6ZA0hQcsOZTK/view)
 
   ## Contributing
 
-  bo
+  To inquire about contributing you may contact me at the below email address.
 
   ## Tests
 
-  bob
+  N/A
 
 ## License
 
-The Unlicense
----
+MIT License
 
 ## Questions?
 
 for any questions you may contact me with the below information:
 
-GitHub: [@boib](https://github.com/boib)
+GitHub: [@Doompeck](https://github.com/Doompeck)
 
 
-  Email: bob
+  Email: towheadcreative@gmail.com
 
   

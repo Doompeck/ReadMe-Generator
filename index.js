@@ -38,7 +38,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: "Provide usage insstructions and examples of your project for the Usage sectrion",
+        message: "Provide usage instructions and examples of your project for the Usage sectrion",
         name: 'usage'
     },
     {
@@ -77,7 +77,7 @@ async function init() {
     const markdown = generateMarkdown(userResponse);
 
     // console.log(userResponse);
-    writeToFile('ReadMe.md', markdown);
+    writeToFile('ExampleReadMe.md', markdown);
 
 } catch (error) {
     console.log(error);

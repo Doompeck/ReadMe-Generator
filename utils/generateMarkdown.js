@@ -22,13 +22,17 @@ function generateMarkdown(userResponse) {
 
   let tableOfContents = `## Table of Contents`;
 
-  if (userResponse.installation !== '') { tableOfContents += `*[Installation](#installation)<br/>`};
+  if (userResponse.installation !== '') { tableOfContents += `
+  *[Installation](#installation)<br/>`};
 
-  if (userResponse.usage !=='') { tableOfContents += `*[Usage](#usage)<br/>`};
+  if (userResponse.usage !=='') { tableOfContents += `
+  *[Usage](#usage)<br/>`};
 
-  if (userResponse.contributing !== '') { tableOfContents += `*[Contributing](#contributing)<br/>`};
+  if (userResponse.contributing !== '') { tableOfContents += `
+  *[Contributing](#contributing)<br/>`};
 
-  if (userResponse.tests !== '') { tableOfContents += `*[Tests](#tests)<br/>`};
+  if (userResponse.tests !== '') { tableOfContents += `
+  *[Tests](#tests)<br/>`};
 
 let markdown = 
 `${licenseBadge}
